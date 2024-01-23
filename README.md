@@ -1,35 +1,24 @@
-# oupsgpt
+# OupsGPT - Sérieux Site d'Émissions Sonores Artificielles
 
-This template should help get you started developing with Vue 3 in Vite.
+Bienvenue sur OupsGPT, un projet sérieux consacré à la génération d'émissions sonores à travers l'intelligence artificielle.
 
-## Recommended IDE Setup
+## Description
+OupsGPT est une plateforme dédiée à l'exploration des capacités sonores de l'intelligence artificielle. En posant des questions spécifiques, vous recevrez en retour des réponses sous la forme de sons calculés, soigneusement créés pour représenter diverses expressions auditives.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Comment ça marche
+Questions Ciblées: Posez des questions spécifiques pour recevoir des réponses sonores calculées.
+Variété d'Émissions Sonores: Découvrez une gamme de sons soigneusement générés par notre IA, chacun représentant une réponse unique et réfléchie.
+Partagez l'Expérience Sonore: Partagez vos expériences sonores préférées avec la communauté et contribuez à la diversité des émissions.
 
-## Customize configuration
+## Comment Contribuer
+Vous pouvez contribuer à OupsGPT de plusieurs manières :
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Suggérez de Nouveaux Sons: Enrichissez notre collection en proposant des idées de sons originaux pour des réponses spécifiques.
+Partagez Vos Impressions: Partagez vos impressions sur les réseaux sociaux, aidant ainsi à promouvoir une utilisation sérieuse de l'IA dans le domaine sonore.
 
-## Project Setup
+## Avertissement
+OupsGPT se veut être une exploration sérieuse des possibilités de l'intelligence artificielle dans le domaine sonore. Nous encourageons une utilisation responsable et respectueuse.
 
-```sh
-npm install
-```
+## Remerciements
+Un sincère merci à [Raclette.world](https://raclette.world/) pour la mise à disposition de la technologie qui alimente nos expériences sonores.
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
