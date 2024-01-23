@@ -246,7 +246,7 @@ export default {
             <button class="flex items-center justify-center rounded-full border border-gray-200 bg-gray-50 text-gray-600 dark:border-white/10 dark:bg-white/10 dark:text-gray-200"
                     id="headlessui-menu-button-:r7:" type="button" aria-haspopup="true" aria-expanded="false"
                     data-headlessui-state="">
-              <a href="mailto:contact@oupsgpt.fr">
+              <a href="mailto:contact@oupsgpt.com">
                 <div class="flex h-6 w-6 items-center justify-center text-xs" >
                   ?
                 </div>
