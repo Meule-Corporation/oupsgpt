@@ -236,7 +236,7 @@ export default {
             </form>
             <div class="relative px-2 py-2 text-center text-xs text-gray-600 dark:text-gray-300 md:px-[60px]">
             <span>
-              OupsGPT ne peut pas sentir mauvais, pensez a vérifier votre odeur.
+              OupsGPT ne peut pas sentir mauvais, pensez à vérifier votre odeur.
             </span>
             </div>
           </div>
