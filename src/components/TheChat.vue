@@ -111,14 +111,11 @@ export default {
                         <ol>
                           <li class="relative z-[15] style-LUQA7" data-projection-id="42" id="style-LUQA7">
                             <div class="group relative active:opacity-90">
-                              <a href="/c/06c07073-0089-42e3-8e8b-c7a70ba9a717"
-                                 class="flex items-center gap-2 rounded-lg p-2 bg-token-surface-primary">
                                 <div class="relative grow overflow-hidden whitespace-nowrap">
                                   Nouveau chat
                                   <div class="absolute bottom-0 right-0 top-0 w-8 bg-gradient-to-l to-transparent from-token-surface-primary">
                                   </div>
                                 </div>
-                              </a>
                               <div class="absolute bottom-0 right-0 top-0 flex items-center gap-1 rounded-lg bg-gradient-to-l from-token-surface-primary from-60% to-transparent pl-10 pr-1">
                                 <button class="flex items-center justify-center text-token-text-primary transition hover:text-token-text-secondary radix-state-open:text-token-text-secondary"
                                         type="button" id="radix-:r23:" aria-haspopup="menu" aria-expanded="false"
