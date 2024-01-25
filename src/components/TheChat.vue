@@ -1,7 +1,7 @@
 <template>
-  <div class="relative z-0 flex h-full w-full overflow-hidden snipcss-GoQyq">
-    <div class="dark flex-shrink-0 overflow-x-hidden bg-black style-SQXxS" id="style-SQXxS">
-      <div class="h-full w-[260px]">
+  <div class="relative z-0 flex h-full w-full overflow-hidden snipcss-GoQyq" :style="isMobile ? 'flex-direction: column' : ''">
+    <div class="dark flex-shrink-0 overflow-x-hidden bg-black style-SQXxS" id="style-SQXxS" :style="isMobile ? 'width: 100%' : ''">
+      <div class="h-full">
         <div class="flex h-full min-h-0 flex-col">
           <div class="flex h-full min-h-0 flex-col transition-opacity opacity-100">
             <div class="scrollbar-trigger relative h-full w-full flex-1 items-start border-white/20">
@@ -223,29 +223,36 @@
 import OupsGPTMessage from '@/components/OupsGPTMessage.vue'
 import UserMessage from '@/components/UserMessage.vue'
 import sound from '../assets/fart.mp3'
+import { useWindowSize } from '@vueuse/core'
+import { computed, ref } from 'vue'
 
 export default {
   components: {
     OupsGPTMessage,
     UserMessage
   },
-  data() {
-    return {
-      chats: [],
-      chatText: ''
-    }
-  },
-  methods: {
-    addChat() {
-      this.chats.push( '' + this.chatText)
-      this.chatText = ''
-      setTimeout(() => {
+  setup()  {
+    console.log('yolo')
+    let { width } = useWindowSize()
+    const chats = ref([])
+    const chatText = ref('')
+    const isMobile = computed(() => {
+      return width.value < 768
+    })
 
+    function addChat() {
+      chats.value.push( '' + this.chatText)
+      chatText.value = ''
+      setTimeout(() => {
         const audio = new Audio(sound);
         audio.play();
-
       }, 300)
-
+    }
+    return {
+      isMobile,
+      chats,
+      chatText,
+      addChat
     }
   }
 }
