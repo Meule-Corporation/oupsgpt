@@ -1,30 +1,3 @@
-<script>
-import OupsGPTMessage from '@/components/OupsGPTMessage.vue'
-import UserMessage from '@/components/UserMessage.vue'
-import sound from '../assets/fart.mp3'
-
-export default {
-  components: {
-    OupsGPTMessage,
-    UserMessage
-  },
-  data() {
-    return {
-      chats: [],
-      chatText: ''
-    }
-  },
-  methods: {
-    addChat() {
-      this.chats.push( '' + this.chatText)
-      this.chatText = ''
-      const audio = new Audio(sound);
-      audio.play();
-    }
-  }
-}
-</script>
-
 <template>
   <div class="relative z-0 flex h-full w-full overflow-hidden snipcss-GoQyq">
     <div class="dark flex-shrink-0 overflow-x-hidden bg-black style-SQXxS" id="style-SQXxS">
@@ -40,7 +13,7 @@ export default {
                   <div class="px-3 py-3.5">
                     <div class="pb-0.5 last:pb-0" tabindex="0" data-projection-id="1">
                       <a class="group flex h-10 items-center gap-2 rounded-lg px-2 font-medium hover:bg-token-surface-primary"
-                         href="/">
+                         href="https://cataas.com/cat">
                         <div class="h-7 w-7 flex-shrink-0">
                           <div class="gizmo-shadow-stroke relative flex h-full items-center justify-center rounded-full bg-white text-black">
                             <img width="41" height="41"
@@ -72,7 +45,7 @@ export default {
                   <div class="sticky left-0 right-0 top-0 z-20 bg-black pt-3.5">
                     <div class="pb-0.5 last:pb-0" tabindex="0">
                       <a class="group flex h-10 items-center gap-2 rounded-lg px-2 font-medium hover:bg-token-surface-primary"
-                         href="/">
+                         href="https://cataas.com/cat" target="_blank">
                         <div class="h-7 w-7 flex-shrink-0">
                           <div class="gizmo-shadow-stroke relative flex h-full items-center justify-center rounded-full bg-white text-black">
                             <img width="41" height="41"
@@ -111,7 +84,7 @@ export default {
                         <ol>
                           <li class="relative z-[15] style-LUQA7" data-projection-id="42" id="style-LUQA7">
                             <div class="group relative active:opacity-90">
-                              <a href="/c/06c07073-0089-42e3-8e8b-c7a70ba9a717"
+                              <a href="https://cataas.com/cat" target="_blank"
                                  class="flex items-center gap-2 rounded-lg p-2 bg-token-surface-primary">
                                 <div class="relative grow overflow-hidden whitespace-nowrap">
                                   Nouveau chat
@@ -119,19 +92,6 @@ export default {
                                   </div>
                                 </div>
                               </a>
-                              <div class="absolute bottom-0 right-0 top-0 flex items-center gap-1 rounded-lg bg-gradient-to-l from-token-surface-primary from-60% to-transparent pl-10 pr-1">
-                                <button class="flex items-center justify-center text-token-text-primary transition hover:text-token-text-secondary radix-state-open:text-token-text-secondary"
-                                        type="button" id="radix-:r23:" aria-haspopup="menu" aria-expanded="false"
-                                        data-state="closed">
-                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                       xmlns="http://www.w3.org/2000/svg" class="icon-md">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M3 12C3 10.8954 3.89543 10 5 10C6.10457 10 7 10.8954 7 12C7 13.1046 6.10457 14 5 14C3.89543 14 3 13.1046 3 12ZM10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12ZM17 12C17 10.8954 17.8954 10 19 10C20.1046 10 21 10.8954 21 12C21 13.1046 20.1046 14 19 14C17.8954 14 17 13.1046 17 12Z"
-                                          fill="currentColor">
-                                    </path>
-                                  </svg>
-                                </button>
-                              </div>
                             </div>
                           </li>
                         </ol>
@@ -258,3 +218,35 @@ export default {
     </div>
   </div>
 </template>
+
+<script>
+import OupsGPTMessage from '@/components/OupsGPTMessage.vue'
+import UserMessage from '@/components/UserMessage.vue'
+import sound from '../assets/fart.mp3'
+
+export default {
+  components: {
+    OupsGPTMessage,
+    UserMessage
+  },
+  data() {
+    return {
+      chats: [],
+      chatText: ''
+    }
+  },
+  methods: {
+    addChat() {
+      this.chats.push( '' + this.chatText)
+      this.chatText = ''
+      setTimeout(() => {
+
+        const audio = new Audio(sound);
+        audio.play();
+
+      }, 300)
+
+    }
+  }
+}
+</script>

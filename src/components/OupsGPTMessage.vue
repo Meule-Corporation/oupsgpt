@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full text-token-text-primary style-r9h5A"
+  <div v-if="displayed" class="w-full text-token-text-primary style-r9h5A"
        data-testid="conversation-turn-3" id="style-r9h5A">
     <div class="px-4 py-2 justify-center text-base md:gap-6 m-auto">
       <div
@@ -44,6 +44,7 @@ export default {
   name: 'OupsGPTMessage',
   data() {
     return {
+      displayed: false,
       originalText: 'Oups, j\'ai pété.',
       words: [],
       displayedText: "",
@@ -52,8 +53,12 @@ export default {
     };
   },
   mounted() {
-    this.splitWords();
-    this.displayWords();
+    setTimeout(() => {
+      this.displayed = true
+      this.splitWords();
+      this.displayWords();
+    }, 1300);
+
   },
   methods: {
     splitWords() {
